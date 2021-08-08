@@ -17,6 +17,8 @@ export class Cards extends Component {
             case "amex" :
                 titleImage = amexImg
                 break;
+            default :
+                titleImage = visaImg
         }
 
         return (
@@ -28,7 +30,7 @@ export class Cards extends Component {
                                 <img src={chipImg} alt="" />
                             </div>
                             <div className="card-image">
-                                <img src={titleImage} />
+                                <img src={titleImage} alt="" />
                             </div>
                             <div className={`card-number ${cardNumFocused ? "bordered" : ''}`}>{cardNumber}</div>
                             <div className={`card-name ${cardNameFocused ? "bordered" : ''} `}>
@@ -46,7 +48,7 @@ export class Cards extends Component {
                             <p className="cvv-text">CVV</p>
                             <div className="display-cvv">{cardCvv}</div>
                             <div className="card-image-back">
-                                <img src={titleImage} />
+                                <img src={titleImage} alt="" />
                             </div>
                         </div> 
                     )       
