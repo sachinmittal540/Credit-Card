@@ -1,0 +1,128 @@
+.black-strip {
+    background-color: black;
+    grid-area: 2/1/5/-1;
+    margin: 0 -15px;
+}
+
+.display-cvv {
+    text-align: right;
+    background: white;
+    border-radius: 3px;
+    grid-area: 8/1/11/-1;
+    margin: 0 -5px;
+    padding: 6px;
+}
+
+.cvv-text {
+    color: white;
+    text-align: right;
+    font-weight: 600;
+    padding-right: 5px;
+    grid-area: 6/18/-9/-1;
+}
+
+.number-bordered {
+    top: 75px;
+    width: 94%;
+    height: 45px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.name-bordered {
+    bottom: 10px;
+    width: 70%;
+    height: 45px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.info-title {
+    margin: 20px 10px;
+    font-size: 12px !important;
+    font-weight: 550 !important;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-holder {
+    margin: 20px 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+}
+
+.credit-card-container {
+    height: 200px;
+    margin-bottom: 40px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    background-image: url('../../images/6.jpeg');
+    background-size: cover;
+    border-radius: 10px;
+    padding: 15px;
+    backface-visibility: hidden;
+}
+
+.card-image {
+    grid-area: 1/5/5/-1;
+    text-align: right;
+}
+
+.card-image-back {
+    grid-area: 13/5/-1/-1;
+    text-align: right;
+}
+
+.info-card-chip {
+    grid-area: 1/1/5/4;
+    background-size: cover;
+    margin-left: 5px;
+}
+
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.bordered {
+    height: auto !important;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0 !important;
+}
+
+.card-number {
+    grid-area: 7/1/9/-1;
+    padding: 0 5px;
+    letter-spacing: 4px;
+    font-size: 22px !important;
+    color: white;
+    font-weight: 800;
+    width: 100%;
+    position: absolute !important;
+}
+
+.card-name {
+    grid-area: 12/1/-1/16;
+    padding: 5px;
+    width: 100%;
+}
+
+.date-container {
+    grid-area: 12/17/-1/-1;
+    padding: 2px;
+    width: 100%;
+}
+
+.card-name p {
+    margin: 0 !important;
+}
