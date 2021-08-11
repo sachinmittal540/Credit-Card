@@ -1,63 +1,3 @@
-.black-strip {
-    background-color: black;
-    grid-area: 2/1/5/-1;
-    margin: 0 -15px;
-}
-
-.display-cvv {
-    text-align: right;
-    background: white;
-    border-radius: 3px;
-    grid-area: 8/1/11/-1;
-    margin: 0 -5px;
-    padding: 6px;
-}
-
-.cvv-text {
-    color: white;
-    text-align: right;
-    font-weight: 600;
-    padding-right: 5px;
-    grid-area: 6/18/-9/-1;
-}
-
-.number-bordered {
-    top: 75px;
-    width: 94%;
-    height: 45px;
-    position: absolute;
-    z-index: 1;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
-.name-bordered {
-    bottom: 10px;
-    width: 70%;
-    height: 45px;
-    position: absolute;
-    z-index: 1;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-
-.info-title {
-    margin: 20px 10px;
-    font-size: 12px !important;
-    font-weight: 550 !important;
-    color: lightgray;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.card-holder {
-    margin: 20px 10px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700 !important;
-    font-size: 12px !important;
-}
-
 .credit-card-container {
     height: 230px;
     margin-top: -115px;
@@ -71,16 +11,7 @@
     padding: 15px;
     backface-visibility: hidden;
     top: 0;
-}
-
-.card-image {
-    grid-area: 1/5/5/-1;
-    text-align: right;
-}
-
-.card-image-back {
-    grid-area: 13/5/-1/-1;
-    text-align: right;
+    width: 100%;
 }
 
 .info-card-chip {
@@ -89,16 +20,9 @@
     margin-left: 5px;
 }
 
-img {
-    height: 100%;
-    object-fit: cover;
-}
-
-.bordered {
-    height: auto !important;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin: 0 !important;
+.card-image {
+    grid-area: 1/5/5/-1;
+    text-align: right;
 }
 
 .card-number {
@@ -118,10 +42,87 @@ img {
     width: 100%;
 }
 
+.info-title {
+    margin: 20px 10px;
+    font-size: 12px !important;
+    font-weight: 550 !important;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-holder {
+    margin: 20px 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+}
+
 .date-container {
     grid-area: 12/17/-1/-1;
     padding: 2px;
     width: 100%;
+}
+
+.black-strip {
+    background-color: black;
+    grid-area: 2/1/5/-1;
+    margin: 0 -15px;
+}
+
+.cvv-text {
+    color: white;
+    text-align: right;
+    font-weight: 600;
+    padding-right: 5px;
+    grid-area: 6/18/-9/-1;
+}
+
+.display-cvv {
+    text-align: right;
+    background: white;
+    border-radius: 3px;
+    grid-area: 8/1/11/-1;
+    margin: 0 -5px;
+    padding: 6px;
+}
+
+.card-image-back {
+    grid-area: 13/5/-1/-1;
+    text-align: right;
+}
+
+.bordered {
+    height: auto !important;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0 !important;
+}
+
+/* .number-bordered {
+    top: 75px;
+    width: 94%;
+    height: 45px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+} */
+
+/* .name-bordered {
+    bottom: 10px;
+    width: 70%;
+    height: 45px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid white;
+    border-radius: 5px;
+} */
+
+img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .card-name p {
