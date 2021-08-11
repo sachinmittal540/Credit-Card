@@ -54,9 +54,9 @@ export class CardForm extends Component {
     render() {
         const {cardNumber, cardName, cardDate, cardCvv, cardNumFocused, cardNameFocused, cardDateFocused, cardCvvFocused, cardType} = this.state;
         return (
-            <section>
+            <div className="main-container">
                 <div className="info-container">
-                    <Form style={{position: 'absolute', bottom: 0, width: '86%'}} autoComplete="off">
+                    <Form style={{position: "relative", bottom: "0px", width: "100%", paddingTop: "155px"}} autoComplete="off">
                         <Cards 
                             cardNumber={cardNumber}
                             cardName={cardName}
@@ -139,7 +139,8 @@ export class CardForm extends Component {
                         </Form.Item>
                     </Form>
                 </div>
-            </section>
+            </div>
+            
         )
     }
 }
